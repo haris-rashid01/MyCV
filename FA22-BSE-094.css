@@ -1,122 +1,181 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-
-body{
-    background-color: rgb(0,0,33);
+body {
+    background-color: rgb(0, 0, 33);
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 60px;
-    background-color: rgb(18,18,62);
+    background-color: rgb(18, 18, 62);
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: center;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin: 0 23px;
 }
-.left{
+
+.left {
     font-size: 1.5rem;
 }
-.firstSection{
+
+.firstSection {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 80px 0;
 }
-.firstSection  > div{
+
+.firstSection>div {
     width: 30%;
 }
-.leftSection{
-    font-size: 2rem; 
+
+.leftSection {
+    font-size: 2rem;
     margin: 70px 0;
 }
-.rightSection img{
+
+.rightSection img {
     background: none;
     width: 80%;
     margin: 50px 0;
-    border-radius:100px;
+    border-radius: 100px;
 }
-.name{
+
+.name {
     color: purple;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
 }
+
 nav ul li a:hover {
     color: burlywood;
     font-size: 1.1rem;
 }
-#element{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.secondSection{
+
+.secondSection {
     max-width: 80vw;
     margin: auto;
 }
-main hr{
+
+main hr {
     border: 0;
     background: peru;
     height: 1.2px;
     margin: 40px 84px;
 }
-.secondSection{
+
+.secondSection {
     max-width: 80vw;
     margin: auto;
     height: 80vh;
 }
-.secondSection Objective{
-   background-color: white;
-    width: 80vw;    
+
+.secondSection Objective {
+    background-color: white;
+    width: 80vw;
     height: 2px;
     margin: 56px 0;
 }
-.Objective p{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.Objective p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.Education li{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.Education li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.Professional p{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.Professional p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.Interests li{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.Interests li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.Skills li{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.Skills li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-footer{
+
+footer {
     display: flex;
-    justify-content:end;
+    justify-content: end;
     /* flex-direction:unse; */
     margin: 23px 133px;
     bottom: 0px;
 }
-footer{
+
+footer {
     display: flex;
     justify-content: space-evenly;
     margin: 23px 122px;
     text-align: center;
     bottom: 100px;
 }
-button{
+
+button {
     color: black;
     border: 2px solid white;
     border-radius: 3px;
     width: 100px;
     height: 30px;
 }
-.secondSection p{
+
+.secondSection p {
     font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .firstSection > div {
+        width: 100%;
+    }
+
+    .rightSection img {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .leftSection {
+        font-size: 1.5rem;
+        margin: 50px 0;
+    }
+
+    .rightSection img {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .leftSection {
+        font-size: 1.2rem;
+    }
 }
